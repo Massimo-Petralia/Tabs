@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tabs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="tabs.css">
+    <script src="tabs.js"></script>
+</head>
+
+<body onload="buildTabs(); buildContent(); defaultTab(); my_intersectionObserver()">
+<button onclick="">test</button>
+
+    <div id="container">
+        <form>
+            <fieldset>
+                <legend>Crea nuova tab</legend>
+                <label for="">Titolo: <input type="text" placeholder="Scrivi il titolo della nuova tab"
+                    id="titleImput"></label> 
+                <label for="">Percorso file di testo: <input type="text"
+                    placeholder="Scrivi url del file di testo" id="textImput" value="txt/lorem.txt"></label> 
+                <span onclick="newTab()" id="addButton">+</span>
+            </fieldset>
+        </form>
+        <div id="parentBox">
+            <div id="tab">
+        </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>

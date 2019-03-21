@@ -1,0 +1,135 @@
+
+
+.myText{
+    width: 100%;
+    height: 100%;
+}
+
+.tabContent{
+display: none;
+position: relative;
+}
+
+.animation{
+    animation-name: fade;
+    animation-duration: 500ms;
+}
+
+@keyframes fade {
+    from {opacity: 0;} 
+    to {opacity: 1; }
+}
+
+#container{
+    width: 800px;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+#tab{
+    position: relative;
+    background: rgb(187, 180, 180);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 1s;
+    scroll-behavior: smooth;
+
+}
+
+.tablinks{
+    background: transparent;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    transition: 500ms;
+    
+}
+.active{
+    background: gray;
+}
+
+.tablinks:hover{
+    background: gray;
+ 
+}
+
+h3{
+    margin-left: 10px;
+}
+
+.myClose{
+    position: absolute;
+    left: 98%;
+    bottom: 98%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.myClose:hover{
+    color: red;
+}
+
+#myPrev{
+    cursor: pointer;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: absolute;
+    top: 29.3%;
+    padding-right: 5px;
+    padding-left: 5px;
+    background: rgb(187, 180, 180);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#myNext{
+    cursor: pointer;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: absolute;
+    left:42.5%;
+    top: 29.3%;
+    background: rgb(187, 180, 180);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.myControls{
+    display: none;
+}
+
+.dispalyBlockClass{
+    display: block;
+}
+
+#myAddButton{
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+#addButton{
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+#addButton:hover{
+    color: red; 
+}
+
+#listenItem{
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.myCloseButton{
+    margin-left: 5px;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
